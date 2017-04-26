@@ -58,7 +58,11 @@ Once the above settings are set as desired, we can start training a model. This 
     import train
     train.trainer(X, C, skmodel)
 
-Where skmodel is the skip-thoughts model loaded from Step 3. As training progresses the model will periodically generate samples and compare them to the ground truth. For the decoding task, you might start seeing results like this:
+Where skmodel is the skip-thoughts model loaded from Step 3. 
+
+`skmodel=skipthoughts.load_model()`
+
+As training progresses the model will periodically generate samples and compare them to the ground truth. For the decoding task, you might start seeing results like this:
 
     Truth  0 :  UNK in hand , I opened my door .
     Sample ( 0 )  0 :  Saber , I opened my door in .    
